@@ -1,3 +1,6 @@
+.. _Cosmic: https://system76.com/cosmic/
+.. _Ansible: https://www.ansible.com/
+
 ################################
   Setup FreeBSD as Workstation
 ################################
@@ -19,16 +22,18 @@ Each has a flavour and tweaks I will document in these lab notes.
 - `Setup FreeBSD as Workstationm <https://github.com/TorbenJakobsen/setup_freebsd_as_workstation/>`__
 - `Setup macOS as Workstation <https://github.com/TorbenJakobsen/setup_macos_as_workstation/>`__
 - `Setup Proxmox as Hypervisor <https://github.com/TorbenJakobsen/setup_proxmox_as_hypervisor/>`__
+- `Setup Windows 11 as Workstation <https://github.com/TorbenJakobsen/setup_windows_11_as_workstation/>`__
 
 Additionally there some common components and setup.
 
 - `Manage configuration with GNU stow <https://github.com/TorbenJakobsen/manage_configuration_with_stow/>`__ 
+- `Setup Python for Development <https://github.com/TorbenJakobsen/setup_python_for_development/>`__ 
 - `Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__ 
 - `Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__ 
 
 I also have a crude utility to syncronize and 
 `manage GitHub repositories <https://github.com/TorbenJakobsen/manage_github_repos/>`__
-with these notes sufficeint for my personal needs.
+with these notes sufficient for my personal needs.
 
 We are all different with different knowledge and foundation,
 so I appologize in advance if steps are missing or skipped.
@@ -37,9 +42,9 @@ so I appologize in advance if steps are missing or skipped.
   Introduction
 ****************
 
-Documents my personal setup.
-
-A better way is to use Ansible, and I will get there eventually.
+A definite better way than manual steps
+is to use Ansible_  (or similar),
+and I will get there eventually.
 
 Initial Housekeeping
 ====================
@@ -86,7 +91,7 @@ Install prefered Terminal and Shell
 ===================================
 
 This topic has its own page:
-https://github.com/TorbenJakobsen/setup_terminal_and_shell.
+`Setup Terminal and Shell <https://github.com/TorbenJakobsen/setup_terminal_and_shell/>`__.
 
 Install :code:`ansible`
 =======================
@@ -130,8 +135,6 @@ To install public key in GitHub follow ...
 Install Visual Studio Code
 --------------------------
 
-https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
-
 .. code:: bash 
 
   ...
@@ -141,80 +144,10 @@ https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-dis
   ...
 
 The general guide is here:
-https://code.visualstudio.com/docs/setup/linux
+https://code.visualstudio.com/docs/
 
-Install :code:`code` Extensions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can use the command line to list and install/uninstall extensions.
-
-Examples:
-
-.. code:: bash 
-
-  code --list-extensions
-  code --install-extension redhat.vscode-yaml
-  code --uninstall-extension timonwong.shellcheck
-
-My personal preferences are:
-
-| :code:`ms-python.python`
-| :code:`ms-python.vscode-pylance`
-
-.. code:: text
-
-  aaron-bond.better-comments
-  davidanson.vscode-markdownlint
-  docker.docker
-  donjayamanne.python-environment-manager
-  dracula-theme.theme-dracula
-  github.codespaces
-  github.vscode-github-actions
-  ibm.ibm-developer
-  ibmconsulting.ica
-  inferrinizzard.prettier-sql-vscode
-  jakebecker.elixir-ls
-  lextudio.iis
-  lextudio.restructuredtext-pack
-  mechatroner.rainbow-csv
-  ms-azuretools.vscode-docker
-  ms-python.black-formatter
-  ms-python.debugpy
-  ms-python.isort
-  ms-python.python
-  ms-python.vscode-pylance
-  ms-toolsai.jupyter
-  ms-toolsai.jupyter-keymap
-  ms-toolsai.jupyter-renderers
-  ms-toolsai.vscode-jupyter-cell-tags
-  ms-toolsai.vscode-jupyter-slideshow
-  ms-vscode-remote.remote-containers
-  ms-vscode-remote.remote-ssh
-  ms-vscode-remote.remote-ssh-edit
-  ms-vscode.makefile-tools
-  ms-vscode.remote-explorer
-  njpwerner.autodocstring
-  quarto.quarto
-  redhat.ansible
-  redhat.vscode-yaml
-  sapos.yeoman-ui
-  saposs.app-studio-remote-access
-  saposs.app-studio-toolkit
-  saposs.sap-guided-answers-extension
-  saposs.vscode-ui5-language-assistant
-  saposs.xml-toolkit
-  sapse.sap-ux-annotation-modeler-extension
-  sapse.sap-ux-application-modeler-extension
-  sapse.sap-ux-fiori-tools-extension-pack
-  sapse.sap-ux-help-extension
-  sapse.sap-ux-service-modeler-extension
-  shuworks.vscode-table-formatter
-  sonarsource.sonarlint-vscode
-  swyddfa.esbonio
-  tamasfe.even-better-toml
-  trond-snekvik.simple-rst
-  wesbos.theme-cobalt2
-  wholroyd.jinja
+Finalize installation by following 
+`Setup Visual Studio Code <https://github.com/TorbenJakobsen/setup_visual_studio_code/>`__.
 
 Install Docker
 --------------
